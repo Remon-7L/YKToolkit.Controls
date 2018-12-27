@@ -1,5 +1,11 @@
-# �T�v
-YKToolkit.Controls �� WPF �ɂ��f�X�N�g�b�v�A�v���P�[�V�����J�������̃J�X�^���R���g���[����񋟂��郉�C�u�����ł��B
+コンボボックスのデザイン実装で悩んでいたらまさかむっちゃVSっぽいライブラリに出会うとは...
 
-![�X�N���[���V���b�g](https://github.com/YKSoftware/YKToolkit.Controls/wiki/images/ScreenShot.png)
+自分用の変更点
+・.NET Framework 4.7.2にアップグレード
+・自分では使わないものを削除
+
+# 概要
+YKToolkit.Controls は WPF によるデスクトップアプリケーション開発向けのカスタムコントロールを提供するライブラリです。
+
+![スクリーンショット](https://github.com/YKSoftware/YKToolkit.Controls/wiki/images/ScreenShot.png)
 
