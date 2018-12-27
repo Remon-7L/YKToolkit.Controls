@@ -603,12 +603,6 @@
       <Link>Views\Resources\icon.ico</Link>
     </Resource>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\YKToolkit.Controls.NET4\YKToolkit.Controls.NET4.csproj">
-      <Project>{4244437b-2e3a-4224-adc5-81b4ea3fd762}</Project>
-      <Name>YKToolkit.Controls.NET4</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

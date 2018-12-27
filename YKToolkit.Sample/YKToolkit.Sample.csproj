@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>YKToolkit.Sample</RootNamespace>
     <AssemblyName>YKToolkit.Sample</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,6 +47,9 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -78,7 +82,6 @@
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\ProductInfo.cs" />
     <Compile Include="Models\ViewModelInfo.cs" />
-    <Compile Include="ViewModels\ExtendedControls\BinaryEditorViewModel.cs" />
     <Compile Include="ViewModels\ExtendedControls\RadarChartViewModel.cs" />
     <Compile Include="ViewModels\Helpers\AdornerViewModel.cs" />
     <Compile Include="ViewModels\Helpers\KeyboardHookViewModel.cs" />
@@ -88,7 +91,6 @@
     <Compile Include="ViewModels\Helpers\FourierViewModel.cs" />
     <Compile Include="ViewModels\ExtendedControls\LineGraphSubViewModel.cs" />
     <Compile Include="ViewModels\ExtendedControls\LineGraphViewModel.cs" />
-    <Compile Include="ViewModels\ExtendedControls\FileTreeViewViewModel.cs" />
     <Compile Include="ViewModels\ExtendedControls\BusyIndicatorViewModel.cs" />
     <Compile Include="ViewModels\ExtendedControls\ColorPickerViewModel.cs" />
     <Compile Include="ViewModels\DebugViewModel.cs" />
@@ -119,17 +121,11 @@
     <Compile Include="ViewModels\VersionViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\Debug\ItemDragBehavior.cs" />
-    <Compile Include="Views\ExtendedControls\BinaryEditorView.xaml.cs">
-      <DependentUpon>BinaryEditorView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\ExtendedControls\RadarChartView.xaml.cs">
       <DependentUpon>RadarChartView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ExtendedControls\LineGraphView.xaml.cs">
       <DependentUpon>LineGraphView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ExtendedControls\FileTreeViewView.xaml.cs">
-      <DependentUpon>FileTreeViewView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ExtendedControls\BusyIndicatorView.xaml.cs">
       <DependentUpon>BusyIndicatorView.xaml</DependentUpon>
@@ -238,19 +234,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\ExtendedControls\BinaryEditorView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Views\ExtendedControls\RadarChartView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\ExtendedControls\LineGraphView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\ExtendedControls\FileTreeViewView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -408,6 +396,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

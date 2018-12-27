@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>YKToolkit.Controls</RootNamespace>
     <AssemblyName>YKToolkit.Controls</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -69,19 +69,11 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="ExtendedControls\BinaryEditor\Generic.BinaryEditor.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="ExtendedControls\RadarChart\Generic.RadarChart.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ExtendedControls\LineGraph\Generic.LineGraph.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ExtendedControls\FileTreeView\Generic.FileTreeView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -282,17 +274,9 @@
     <Compile Include="Core\QpTimer.cs" />
     <Compile Include="Core\KeyboardHook.cs" />
     <Compile Include="Core\MouseHook.cs" />
-    <Compile Include="ExtendedControls\BinaryEditor\BinaryEditorTable.cs" />
-    <Compile Include="ExtendedControls\BinaryEditor\DataStyles.cs" />
-    <Compile Include="ExtendedControls\BinaryEditor\Generic.BinaryEditor.xaml.cs">
-      <DependentUpon>Generic.BinaryEditor.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ExtendedControls\BinaryEditor\NumStyles.cs" />
-    <Compile Include="ExtendedControls\FileTreeView\FileTreeViewItemMouseEventArgs.cs" />
     <Compile Include="ExtendedControls\RadarChart\Generic.RadarChart.xaml.cs">
       <DependentUpon>Generic.RadarChart.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ExtendedControls\FileTreeView\FileTreeViewItemDoubleClickEventArgs.cs" />
     <Compile Include="Helpers\Complex.cs" />
     <Compile Include="Helpers\Extensions\FrameworkElementExtensions.cs" />
     <Compile Include="Helpers\Extensions\Linq.cs" />
@@ -304,10 +288,6 @@
     <Compile Include="Bindings\NotificationObject.cs" />
     <Compile Include="ExtendedControls\LineGraph\Generic.LineGraph.xaml.cs">
       <DependentUpon>Generic.LineGraph.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ExtendedControls\FileTreeView\FileTreeViewItem.cs" />
-    <Compile Include="ExtendedControls\FileTreeView\Generic.FileTreeView.xaml.cs">
-      <DependentUpon>Generic.FileTreeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExtendedControls\BusyIndicator\Generic.BusyIndicator.xaml.cs">
       <DependentUpon>Generic.BusyIndicator.xaml</DependentUpon>
@@ -369,6 +349,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

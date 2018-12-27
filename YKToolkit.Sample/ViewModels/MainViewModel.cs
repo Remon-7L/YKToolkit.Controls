@@ -160,11 +160,9 @@
                             Name = "Extended Controls",
                             Children = new List<ViewModelInfo>()
                             {
-                                new ViewModelInfo() { Name = "BinaryEditor", Instance = this._binaryEditorViewModel, },
                                 new ViewModelInfo() { Name = "BusyIndicator", Instance = this._busyIndicatorViewModel, },
                                 new ViewModelInfo() { Name = "ColorPicker", Instance = this._colorPickerViewModel, },
                                 new ViewModelInfo() { Name = "DropDownButton", Instance = this._dropDownButtonViewModel, },
-                                new ViewModelInfo() { Name = "FileTreeView", Instance = this._fileTreeViewViewModel, },
                                 new ViewModelInfo() { Name = "LineGraph", Instance = this._lineGraphViewModel, },
                                 new ViewModelInfo() { Name = "MessageBox", Instance = this._messageBoxViewModel, },
                                 new ViewModelInfo() { Name = "RadarChart", Instance = this._radarChartViewModel, },
@@ -218,11 +216,9 @@
         private ToggleButtonViewModel _toggleButtonViewModel = new ToggleButtonViewModel();
         private TreeViewViewModel _treeViewViewModel = new TreeViewViewModel();
 
-        private BinaryEditorViewModel _binaryEditorViewModel = new BinaryEditorViewModel();
         private BusyIndicatorViewModel _busyIndicatorViewModel = new BusyIndicatorViewModel();
         private ColorPickerViewModel _colorPickerViewModel = new ColorPickerViewModel();
         private DropDownButtonViewModel _dropDownButtonViewModel = new DropDownButtonViewModel();
-        private FileTreeViewViewModel _fileTreeViewViewModel = new FileTreeViewViewModel();
         private LineGraphViewModel _lineGraphViewModel = new LineGraphViewModel();
         private MessageBoxViewModel _messageBoxViewModel = new MessageBoxViewModel();
         private RadarChartViewModel _radarChartViewModel = new RadarChartViewModel();

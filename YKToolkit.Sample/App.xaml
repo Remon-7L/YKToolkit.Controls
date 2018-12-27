@@ -67,9 +67,6 @@
             <vw:TreeViewView />
         </DataTemplate>
 
-        <DataTemplate DataType="{x:Type vm:BinaryEditorViewModel}">
-            <vw:BinaryEditorView />
-        </DataTemplate>
         <DataTemplate DataType="{x:Type vm:BusyIndicatorViewModel}">
             <vw:BusyIndicatorView />
         </DataTemplate>
@@ -78,9 +75,6 @@
         </DataTemplate>
         <DataTemplate DataType="{x:Type vm:DropDownButtonViewModel}">
             <vw:DropDownButtonView />
-        </DataTemplate>
-        <DataTemplate DataType="{x:Type vm:FileTreeViewViewModel}">
-            <vw:FileTreeViewView />
         </DataTemplate>
         <DataTemplate DataType="{x:Type vm:LineGraphViewModel}">
             <vw:LineGraphView />
