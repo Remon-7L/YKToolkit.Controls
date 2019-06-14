@@ -92,9 +92,6 @@
     <Color x:Key="ColorPickerHoverColor1">#FFE36C09</Color>
     <Color x:Key="ColorPickerHoverColor2">White</Color>
 
-    <!-- BusyIndicator -->
-    <Color x:Key="IndicatorColor">#FF3399FF</Color>
-
     <!-- グラフ関連 -->
     <Color x:Key="GraphBorderColor">#FF007ACC</Color>
     <Color x:Key="GraphFillColor">#60007ACC</Color>

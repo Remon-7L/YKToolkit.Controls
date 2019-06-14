@@ -974,10 +974,7 @@
         /// </summary>
         /// <param name="sender">イベント発行元</param>
         /// <param name="e">イベント引数</param>
-        private void OnSizeChanged(object sender, SizeChangedEventArgs e)
-        {
-            UpdateMoveArea();
-        }
+        private void OnSizeChanged(object sender, SizeChangedEventArgs e) => UpdateMoveArea();
         #endregion イベントハンドラ
 
         #region 軸移動/拡大

@@ -16,7 +16,6 @@
         <ResourceDictionary Source="/YKToolkit.Controls;component/Themes/Generic.RepeatButton.xaml" />
         <ResourceDictionary Source="/YKToolkit.Controls;component/Themes/Generic.ScrollBar.xaml" />
         <ResourceDictionary Source="/YKToolkit.Controls;component/Themes/Generic.ScrollViewer.xaml" />
-        <ResourceDictionary Source="/YKToolkit.Controls;component/Themes/Generic.Slider.xaml" />
         <ResourceDictionary Source="/YKToolkit.Controls;component/Themes/Generic.StatusBar.xaml" />
         <ResourceDictionary Source="/YKToolkit.Controls;component/Themes/Generic.TabControl.xaml" />
         <ResourceDictionary Source="/YKToolkit.Controls;component/Themes/Generic.TextBox.xaml" />
@@ -25,7 +24,6 @@
         <ResourceDictionary Source="/YKToolkit.Controls;component/Themes/Generic.TreeView.xaml" />
         <ResourceDictionary Source="/YKToolkit.Controls;component/Themes/Generic.Window.xaml" />
 
-        <ResourceDictionary Source="/YKToolkit.Controls;component/ExtendedControls/BusyIndicator/Generic.BusyIndicator.xaml" />
         <ResourceDictionary Source="/YKToolkit.Controls;component/ExtendedControls/ColorPicker/Generic.ColorPicker.xaml" />
         <ResourceDictionary Source="/YKToolkit.Controls;component/ExtendedControls/DropDownButton/Generic.DropDownButton.xaml" />
         <ResourceDictionary Source="/YKToolkit.Controls;component/ExtendedControls/LineGraph/Generic.LineGraph.xaml" />

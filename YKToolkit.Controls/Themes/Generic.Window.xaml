@@ -393,6 +393,7 @@
                                 <Border Grid.Row="2" Background="{TemplateBinding ContentBackground}">
                                     <ContentPresenter />
                                 </Border>
+
                             </Grid>
                         </Border>
                     </AdornerDecorator>

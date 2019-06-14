@@ -505,8 +505,8 @@
         /// </summary>
         public new ResizeMode ResizeMode
         {
-            get { return (ResizeMode)GetValue(ResizeModeProperty); }
-            set { SetValue(ResizeModeProperty, value); }
+            get => (ResizeMode)GetValue(ResizeModeProperty);
+            set => SetValue(ResizeModeProperty, value);
         }
         #endregion ResizeMode プロパティ
 
@@ -637,6 +637,7 @@
         /// <param name="e">イベント引数</param>
         private void OnWindowClosing(object sender, CancelEventArgs e)
         {
+            /* ウィンドゥ終了時のメッセージボックス
             if ((this.ClosingFunction == null) || this.ClosingFunction())
             {
                 if (this.IsClosingConfirmationEnabled)
@@ -650,6 +651,7 @@
             {
                 e.Cancel = true;
             }
+            */
         }
 
         /// <summary>
@@ -737,9 +739,6 @@
         /// </summary>
         /// <param name="sender">イベント発行元</param>
         /// <param name="e">イベント引数</param>
-        private void ChangeThemeButtonClick(object sender, RoutedEventArgs e)
-        {
-            ThemeManager.Instance.ChangeNextTheme();
-        }
+        private void ChangeThemeButtonClick(object sender, RoutedEventArgs e) => ThemeManager.Instance.ChangeNextTheme();
     }
 }

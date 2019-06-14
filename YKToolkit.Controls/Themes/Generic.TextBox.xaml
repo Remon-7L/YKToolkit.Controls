@@ -7,7 +7,7 @@
 
     <Style TargetType="TextBox">
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
-        <Setter Property="b:TextBoxAllSelectBehavior.IsEnabled" Value="True" />
+        <Setter Property="b:TextBoxAllSelectBehavior.IsEnabled" Value="False" /><!-- ふぉーかす時テキスト全選択 ReadOnlyの時でも一番最後の文章に移動してしまう -->
         <Setter Property="Foreground" Value="{StaticResource DefaultForegroundBrush}" />
         <Setter Property="Background" Value="{StaticResource DefaultBoxBaseBrush}" />
         <Setter Property="BorderBrush">

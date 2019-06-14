@@ -55,7 +55,7 @@
                                   IsItemsHost="True"
                                   />
 
-                        <Rectangle x:Name="PART_Separator" DockPanel.Dock="{TemplateBinding TabStripPlacement}" Width="4" Height="4">
+                        <Rectangle x:Name="PART_Separator" DockPanel.Dock="{TemplateBinding TabStripPlacement}" Width="2" Height="2">
                             <Rectangle.Fill>
                                 <SolidColorBrush Color="{DynamicResource SelectedColor}" />
                             </Rectangle.Fill>

@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>YKToolkit.Controls</RootNamespace>
     <AssemblyName>YKToolkit.Controls</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -52,6 +52,15 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '471|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\471\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -74,10 +83,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ExtendedControls\LineGraph\Generic.LineGraph.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ExtendedControls\BusyIndicator\Generic.BusyIndicator.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -199,11 +204,6 @@
       <Generator>MSBuild:Compile</Generator>
       <DependentUpon>Generic.xaml</DependentUpon>
     </Page>
-    <Page Include="Themes\Generic.Slider.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-      <DependentUpon>Generic.xaml</DependentUpon>
-    </Page>
     <Page Include="Themes\Generic.StatusBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -288,9 +288,6 @@
     <Compile Include="Bindings\NotificationObject.cs" />
     <Compile Include="ExtendedControls\LineGraph\Generic.LineGraph.xaml.cs">
       <DependentUpon>Generic.LineGraph.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ExtendedControls\BusyIndicator\Generic.BusyIndicator.xaml.cs">
-      <DependentUpon>Generic.BusyIndicator.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExtendedControls\ColorPicker\ColorPickerItem.cs" />
     <Compile Include="ExtendedControls\ColorPicker\Generic.ColorPicker.xaml.cs">

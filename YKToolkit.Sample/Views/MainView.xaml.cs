@@ -7,9 +7,6 @@
     /// </summary>
     public partial class MainView : AutoRestoreWindow
     {
-        public MainView()
-        {
-            InitializeComponent();
-        }
+        public MainView() => InitializeComponent();
     }
 }

@@ -145,7 +145,6 @@
                                 new ViewModelInfo() { Name = "RadioButton", Instance = this._radioButtonViewModel, },
                                 new ViewModelInfo() { Name = "RepeatButton", Instance = this._repeatButtonViewModel, },
                                 new ViewModelInfo() { Name = "ScrollBar", Instance = this._scrollBarViewModel, },
-                                new ViewModelInfo() { Name = "Slider", Instance = this._sliderViewModel, },
                                 new ViewModelInfo() { Name = "StatusBar", Instance = this._statusBarViewModel, },
                                 new ViewModelInfo() { Name = "TabControl", Instance = this._tabControlViewModel, },
                                 new ViewModelInfo() { Name = "TextBox", Instance = this._textBoxViewModel, },
@@ -160,7 +159,6 @@
                             Name = "Extended Controls",
                             Children = new List<ViewModelInfo>()
                             {
-                                new ViewModelInfo() { Name = "BusyIndicator", Instance = this._busyIndicatorViewModel, },
                                 new ViewModelInfo() { Name = "ColorPicker", Instance = this._colorPickerViewModel, },
                                 new ViewModelInfo() { Name = "DropDownButton", Instance = this._dropDownButtonViewModel, },
                                 new ViewModelInfo() { Name = "LineGraph", Instance = this._lineGraphViewModel, },
@@ -209,14 +207,12 @@
         private RadioButtonViewModel _radioButtonViewModel = new RadioButtonViewModel();
         private RepeatButtonViewModel _repeatButtonViewModel = new RepeatButtonViewModel();
         private ScrollBarViewModel _scrollBarViewModel = new ScrollBarViewModel();
-        private SliderViewModel _sliderViewModel = new SliderViewModel();
         private StatusBarViewModel _statusBarViewModel = new StatusBarViewModel();
         private TabControlViewModel _tabControlViewModel = new TabControlViewModel();
         private TextBoxViewModel _textBoxViewModel = new TextBoxViewModel();
         private ToggleButtonViewModel _toggleButtonViewModel = new ToggleButtonViewModel();
         private TreeViewViewModel _treeViewViewModel = new TreeViewViewModel();
 
-        private BusyIndicatorViewModel _busyIndicatorViewModel = new BusyIndicatorViewModel();
         private ColorPickerViewModel _colorPickerViewModel = new ColorPickerViewModel();
         private DropDownButtonViewModel _dropDownButtonViewModel = new DropDownButtonViewModel();
         private LineGraphViewModel _lineGraphViewModel = new LineGraphViewModel();

@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>YKToolkit.Sample</RootNamespace>
     <AssemblyName>YKToolkit.Sample</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -51,6 +51,15 @@
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '471|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\471\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -91,7 +100,6 @@
     <Compile Include="ViewModels\Helpers\FourierViewModel.cs" />
     <Compile Include="ViewModels\ExtendedControls\LineGraphSubViewModel.cs" />
     <Compile Include="ViewModels\ExtendedControls\LineGraphViewModel.cs" />
-    <Compile Include="ViewModels\ExtendedControls\BusyIndicatorViewModel.cs" />
     <Compile Include="ViewModels\ExtendedControls\ColorPickerViewModel.cs" />
     <Compile Include="ViewModels\DebugViewModel.cs" />
     <Compile Include="ViewModels\ExtendedControls\SplitButtonViewModel.cs" />
@@ -111,7 +119,6 @@
     <Compile Include="ViewModels\StandardControls\RadioButtonViewModel.cs" />
     <Compile Include="ViewModels\StandardControls\RepeatButtonViewModel.cs" />
     <Compile Include="ViewModels\StandardControls\ScrollBarViewModel.cs" />
-    <Compile Include="ViewModels\StandardControls\SliderViewModel.cs" />
     <Compile Include="ViewModels\StandardControls\StatusBarViewModel.cs" />
     <Compile Include="ViewModels\StandardControls\TabControlViewModel.cs" />
     <Compile Include="ViewModels\StandardControls\TextBoxViewModel.cs" />
@@ -126,9 +133,6 @@
     </Compile>
     <Compile Include="Views\ExtendedControls\LineGraphView.xaml.cs">
       <DependentUpon>LineGraphView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ExtendedControls\BusyIndicatorView.xaml.cs">
-      <DependentUpon>BusyIndicatorView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ExtendedControls\ColorPickerView.xaml.cs">
       <DependentUpon>ColorPickerView.xaml</DependentUpon>
@@ -212,9 +216,6 @@
     <Compile Include="Views\StandardControls\ScrollBarView.xaml.cs">
       <DependentUpon>ScrollBarView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\StandardControls\SliderView.xaml.cs">
-      <DependentUpon>SliderView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\StandardControls\StatusBarView.xaml.cs">
       <DependentUpon>StatusBarView.xaml</DependentUpon>
     </Compile>
@@ -239,10 +240,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\ExtendedControls\LineGraphView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\ExtendedControls\BusyIndicatorView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -351,10 +348,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\StandardControls\ScrollBarView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\StandardControls\SliderView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

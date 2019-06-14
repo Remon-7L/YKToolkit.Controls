@@ -48,9 +48,6 @@
         <DataTemplate DataType="{x:Type vm:ScrollBarViewModel}">
             <vw:ScrollBarView />
         </DataTemplate>
-        <DataTemplate DataType="{x:Type vm:SliderViewModel}">
-            <vw:SliderView />
-        </DataTemplate>
         <DataTemplate DataType="{x:Type vm:StatusBarViewModel}">
             <vw:StatusBarView />
         </DataTemplate>
@@ -67,9 +64,6 @@
             <vw:TreeViewView />
         </DataTemplate>
 
-        <DataTemplate DataType="{x:Type vm:BusyIndicatorViewModel}">
-            <vw:BusyIndicatorView />
-        </DataTemplate>
         <DataTemplate DataType="{x:Type vm:ColorPickerViewModel}">
             <vw:ColorPickerView />
         </DataTemplate>

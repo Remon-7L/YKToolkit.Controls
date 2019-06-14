@@ -7,9 +7,6 @@
     /// </summary>
     public partial class ButtonView : UserControl
     {
-        public ButtonView()
-        {
-            InitializeComponent();
-        }
+        public ButtonView() => InitializeComponent();
     }
 }
